@@ -2,9 +2,7 @@ package ru.netology.homeworks;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class Radio {
@@ -15,7 +13,9 @@ public class Radio {
     public Radio(int stationsCount) {
         maxStation = stationsCount - 1;
     }
-    
+
+    public Radio() {
+    }
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
         if (newCurrentRadioStation < 0) {
