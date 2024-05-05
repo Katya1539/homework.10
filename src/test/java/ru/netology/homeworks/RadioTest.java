@@ -455,4 +455,15 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void stationCount() {
+    Radio radio = new Radio(20);
+
+    radio.setCurrentRadioStation(15);
+
+    int expected = 15;
+    int actual = radio.getCurrentRadioStation();
+    Assertions.assertEquals(expected, actual);
+    }
 }
