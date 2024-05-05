@@ -15,10 +15,7 @@ public class Radio {
     public Radio(int stationsCount) {
         maxStation = stationsCount - 1;
     }
-
-    public Radio() {
-        maxStation = 9;
-    }
+    
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
         if (newCurrentRadioStation < 0) {
