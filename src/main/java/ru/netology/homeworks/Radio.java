@@ -15,6 +15,7 @@ public class Radio {
     }
 
     public Radio() {
+        maxStation = 9;
     }
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
